@@ -10,7 +10,7 @@ function ReviewsCard(props) {
             <img src={props.img} alt="" className='w-[80px] h-[80px] rounded-full ring-2 ring-yellow-400 mr-2'/>
         </div>
             <div className="">
-            <h2 className="text-lg mb-2">{props.title}</h2>
+            <h2 className="text-md mb-2">{props.title}</h2>
         <div className="flex items-center gap-1">
                     <BsStarFill className='text-yellow-500'/>
                     <BsStarFill className='text-yellow-500'/>
