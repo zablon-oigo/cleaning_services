@@ -1,8 +1,11 @@
 import React from 'react'
+import ReviewsCard from '../layout/ReviewsCard'
 
 function Reviews() {
   return (
-    <div>Reviews</div>
+    <div>
+        <ReviewsCard/>
+    </div>
   )
 }
 
