@@ -1,4 +1,6 @@
 import About from "./components/About"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Reviews from "./components/Reviews"
 import Services from "./components/Services"
@@ -24,6 +26,12 @@ function App() {
   </div>
   <div id="reviews">
     <Reviews/>
+  </div>
+  <div id="contact">
+    <Contact/>
+  </div>
+  <div id="footer">
+    <Footer/>
   </div>
     </>
   )
