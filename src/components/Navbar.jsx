@@ -66,27 +66,27 @@ function Navbar() {
         </nav>
         <section className={`${menu?'translate-x-0':'-translate-x-full'} duration-300 transition-transform md:hidden absolute top-[90px]  left-0 -translate-x-1/2 w-full bg-white h-[450px] flex justify-center gap-6 items-center flex-col`}>
         <div className=" flex flex-col justify-center  items-start space-y-6">
-                <Link to={'home'} spy={true} duration={500} smooth={true} className="text-3xl font-medium  text-gray-800 relative group cursor-pointer">
+                <Link to={'home'} spy={true} duration={500} smooth={true} onClick={closeMenu} className="text-3xl font-medium  text-gray-800 relative group cursor-pointer">
                     Home
                     <span className="duration-300 absolute bottom-0 inset-x-0 scale-x-0 transform transition-transform origin-left bg-yellow-300 group-hover:scale-x-100 h-0.5 "></span>
                 </Link>
-                <Link to={'about'} spy={true} duration={500} smooth={true} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
+                <Link to={'about'} spy={true} duration={500} smooth={true} onClick={closeMenu} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
                     About
                     <span className="duration-300 absolute inset-x-0 bottom-0 h-0.5 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100 bg-yellow-300"></span>
                 </Link>
-                <Link to={'services'} spy={true} duration={500} smooth={true} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
+                <Link to={'services'} spy={true} duration={500} smooth={true} onClick={closeMenu} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
                     Services
                     <span className="duration-300 absolute bottom-0 origin-left scale-x-0 inset-x-0 bg-yellow-300 transform transition-transform group-hover:scale-x-100 h-0.5"></span>
                 </Link>
-                <Link to={'why'} spy={true} duration={500} smooth={true} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
+                <Link to={'why'} spy={true} duration={500} smooth={true} onClick={closeMenu} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
                     Why Choose Us
                     <span className="duration-300 absolute bottom-0 origin-left scale-x-0 inset-x-0 bg-yellow-300 transform transition-transform group-hover:scale-x-100 h-0.5"></span>
                 </Link>
-                <Link to={'reviews'} spy={true} duration={500} smooth={true} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
+                <Link to={'reviews'} spy={true} duration={500} smooth={true} onClick={closeMenu} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
                     Reviews
                     <span className="duration-300 absolute bottom-0 origin-left scale-x-0 inset-x-0 bg-yellow-300 transform transition-transform group-hover:scale-x-100 h-0.5"></span>
                 </Link>
-                <Link to={'contact'} spy={true} duration={500} smooth={true} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
+                <Link to={'contact'} spy={true} duration={500} smooth={true} onClick={closeMenu} className="text-3xl font-medium  relative group cursor-pointer text-gray-800">
                     Contact
                     <span className="duration-300 absolute bottom-0 origin-left scale-x-0 inset-x-0 bg-yellow-300 transform transition-transform group-hover:scale-x-100 h-0.5"></span>
                 </Link>
