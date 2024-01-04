@@ -1,4 +1,5 @@
 import {useState,React} from 'react'
+
 import { Link } from 'react-scroll'
 import header from '../assets/images/header.jpg'
 import Button from '../layout/Button'
@@ -24,7 +25,7 @@ function Navbar() {
         <div className="bg-black absolute top-0 right-0 w-full h-screen bg-opacity-70 md:px-20 px-5 py-10">
         <nav className="flex justify-between items-center">
             <div className="">
-                <Link to='/' smooth={true} duration={500} spy={true} className="text-4xl cursor-pointer font-bold text-white">
+                <Link to={'home'} smooth={true} duration={500} spy={true} className="text-4xl cursor-pointer font-bold text-white">
                     Wee <span className="text-yellow-300">Clean</span>
                 </Link>
             </div>
@@ -33,23 +34,23 @@ function Navbar() {
                     Home
                     <span className="duration-300 absolute bottom-0 inset-x-0 scale-x-0 transform transition-transform origin-left bg-yellow-300 group-hover:scale-x-100 h-0.5 "></span>
                 </Link>
-                <Link to={'home'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
+                <Link to={'about'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
                     About
                     <span className="duration-300 absolute inset-x-0 bottom-0 h-0.5 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100 bg-yellow-300"></span>
                 </Link>
-                <Link to={'home'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
+                <Link to={'services'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
                     Services
                     <span className="duration-300 absolute bottom-0 origin-left scale-x-0 inset-x-0 bg-yellow-300 transform transition-transform group-hover:scale-x-100 h-0.5"></span>
                 </Link>
-                <Link to={'home'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
+                <Link to={'why'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
                     Why Choose Us
                     <span className="duration-300 absolute bottom-0 origin-left scale-x-0 inset-x-0 bg-yellow-300 transform transition-transform group-hover:scale-x-100 h-0.5"></span>
                 </Link>
-                <Link to={'home'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
+                <Link to={'reviews'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
                     Reviews
                     <span className="duration-300 absolute bottom-0 origin-left scale-x-0 inset-x-0 bg-yellow-300 transform transition-transform group-hover:scale-x-100 h-0.5"></span>
                 </Link>
-                <Link to={'home'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
+                <Link to={'contact'} spy={true} duration={500} smooth={true} className="text-xl font-medium relative group cursor-pointer text-white">
                     Contact
                     <span className="duration-300 absolute bottom-0 origin-left scale-x-0 inset-x-0 bg-yellow-300 transform transition-transform group-hover:scale-x-100 h-0.5"></span>
                 </Link>

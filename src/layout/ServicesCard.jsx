@@ -50,7 +50,7 @@ function ServicesCard({icon,title,desc}) {
     <>
       {card.map((item)=>{
         return(
-            <div className="group flex flex-col items-center gap-3 p-6 bg-white shadow-2xl rounded-lg cursor-pointer lg:hover:-translate-y-6 transition-all max-w-md duration-300 ease-in-out">
+            <div key={item.id}  className="group flex flex-col items-center gap-3 p-6 bg-white shadow-2xl rounded-lg cursor-pointer lg:hover:-translate-y-6 transition-all max-w-md duration-300 ease-in-out">
                 <div className="bg-[#e4d00a] p-4 text-white  transition-colors duration ease-in-out  group-hover:bg-[#ffdf00] rounded-full">
                     {item.icon}
                 </div>
