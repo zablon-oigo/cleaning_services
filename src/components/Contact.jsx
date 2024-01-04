@@ -1,4 +1,5 @@
-import call from '../assets/images/call.jpg'
+import React from 'react'
+import img from '../assets/images/call.jpg'
 function Contact() {
   return (
  <>
@@ -17,7 +18,7 @@ function Contact() {
         </form>
     </div>
     <div className="mt-10 w-full md:w-1/2">
-        <img src={call} alt="call" className='rounded shadow-2xl'/>
+        <img src={img} alt="call" className='rounded shadow-2xl'/>
     </div>
             </div>
   </div>
