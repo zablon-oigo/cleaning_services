@@ -1,15 +1,20 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import about from '../assets/images/about.jpg'
 import Button from '../layout/Button'
 function About() {
+    useEffect(() => {
+        AOS.init();
+     }, []);
   return (
     <div className='w-full min-h-screen md:px-20 px-5 py-10 bg-gradient-to-r md:from-yellow-200 from-yellow-600 to-yellow-300  md:to-yellow-600'>
         <h1 className="md:text-5xl text-3xl font-bold capitalize text-center text-white">about us</h1>
         <div className="md:my-20 my-10 flex flex-col md:flex-row items-center justify-center gap-10">
-            <div className="w-full md:1/2">
+            <div className="w-full md:1/2" data-aos='fade-right'>
             <img src={about} alt="about" className='rounded'/>
             </div>
-            <div className="w-full md:1/2">
+            <div className="w-full md:1/2" data-aos='fade-left'>
                 <h2 className="mb-6 md:text-3xl text-2xl text-center md:text-start font-semibold text-white capitalize">Why choose us for your cleaning services ?</h2>
                 <p className="mb-6 text-white text-xl font-light ">
                 At Wee Clean, we pride ourselves on delivering exceptional cleaning services tailored to meet your unique needs. Our commitment to excellence, attention to detail, and use of eco-friendly products set us apart in the industry. With a team of dedicated professionals, we guarantee a spotless and hygienic environment for your home or business.

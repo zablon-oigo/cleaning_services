@@ -3,6 +3,8 @@ import ReviewsCard from '../layout/ReviewsCard'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import johnsmith from '../assets/reviews/johnsmith.jpg';
 import leah from '../assets/reviews/leah.jpg';
 import jane from '../assets/reviews/jane.jpg';
@@ -11,6 +13,9 @@ import juan from '../assets/reviews/juan.jpg';
 import john from '../assets/reviews/john.jpg';
 
 function Reviews() {
+  useEffect(() => {
+    AOS.init();
+ }, []);
     const reviewsData = [
         {
           desc: "Absolutely love Wee Clean Services! The attention to detail in their cleaning is impressive. The team creates a welcoming and hygienic atmosphere that's truly refreshing.",
@@ -56,7 +61,7 @@ function Reviews() {
         };
       }, []);
       const gridLayout = (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-aos='fade-up'>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-aos='fade-left'>
           {reviewsData.map((review, index) => (
             <ReviewsCard key={index} desc={review.desc} img={review.img} title={review.title} />
           ))}
