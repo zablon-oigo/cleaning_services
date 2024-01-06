@@ -70,7 +70,7 @@ function Navbar() {
             </button>
             
         </nav>
-        <section className={`${menu?'translate-x-0':'-translate-x-full'} duration-300 transition-transform md:hidden absolute top-[90px]  left-0 -translate-x-1/2 w-full bg-white h-[450px] flex justify-center gap-6 items-center flex-col`}>
+        <section className={`${menu?'translate-x-0':'-translate-x-full'} duration-300 z-10 transition-transform md:hidden absolute top-[90px]  left-0 -translate-x-1/2 w-full bg-white h-[450px] flex justify-center gap-6 items-center flex-col`}>
         <div className=" flex flex-col justify-center  items-start space-y-6">
                 <Link to={'home'} spy={true} duration={500} smooth={true} onClick={closeMenu} className="text-3xl font-medium  text-gray-800 relative group cursor-pointer">
                     Home
