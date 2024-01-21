@@ -26,7 +26,7 @@ function Navbar() {
     }
   return (
     <>
-      <header className="min-h-screen " style={bgImage}>
+      <header className="min-h-screen w-full" style={bgImage}>
         <div className="bg-black absolute top-0 right-0 w-full h-screen bg-opacity-70 md:px-20 px-5 py-10">
         <nav className="flex justify-between items-center">
             <div className="">
@@ -101,7 +101,7 @@ function Navbar() {
          <Button title='Call us now'/>
             </div>
         </section>
-        <div className="md:my-60 my-10 w-full md:w-2/3" data-aos='zoom-in-up'>
+        <div className="md:my-60 my-10 w-full md:w-2/3" data-aos='zoom-in-up' data-aos-duration='3000' data-easing='linear'>
             <h2 className="text-6xl font-bold  uppercase text-yellow-300 md:mb-10 mb-6 text-center md:text-start">We clean to the highest standards</h2>
             <p className="text-2xl text-white font-light md:mb-8 mb-4 text-center md:text-start ">
             Embark on a journey to a spotless haven where <span className="text-yellow-300">cleanliness</span> meets tranquility. Our meticulous touch transforms every nook and cranny into a sanctuary of purity. Experience the epitome of <span className="text-yellow-300">cleanliness</span>, tailored just for you. Join us in creating a space that radiates freshness and invites serenity.
